@@ -1,12 +1,8 @@
-﻿header .nav {
-    display: flex;
-    flex-direction: column;
+﻿header {
     background-color: #1a1d24;
-}
-
-header {
-    height: 80px;
-    justify-content: flex-end; /* Places main header at bottom/end of column */
+    display: flex;
+    height: 65px;
+    justify-content: flex-end;
     flex-direction: row;
     padding-bottom: 0;
     position: fixed;
@@ -17,7 +13,12 @@ header {
     transition: .5s;
 }
 
-.site-logo {
+header ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.logo {
     align-self: center;
     width: 140px;
     margin-right: auto;
@@ -25,11 +26,11 @@ header {
     padding-top: 0;
 }
 
-.site-logo img {
-    width: 85px;
-    height: 41px;
-    transition: .5s;
-}
+    .logo img {
+        width: 30px;
+        height: auto;
+        transition: .5s;
+    }
 
 .nav {
     position: relative;
@@ -52,6 +53,7 @@ header {
         padding-top: 1em;
         text-decoration: none;
         border-bottom-color: transparent;
+        transition: .5s;
     }
 
         .nav a:hover {
@@ -62,10 +64,6 @@ header {
         margin-left: .65em;
         margin-right: .65em;
     }
-
-.nav-item {
-    transition: .5s;
-}
 
 label {
     cursor: pointer;

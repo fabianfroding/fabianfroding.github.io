@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Resources",
+    "\\Resources\\css",
+    "\\Views"
   ],
-  "SelectedNode": "\\meed.png",
+  "SelectedNode": "\\Resources\\css\\StyleSheet1.css",
   "PreviewInSolutionExplorer": false
 }
