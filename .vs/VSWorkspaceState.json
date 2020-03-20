@@ -3,8 +3,10 @@
     "",
     "\\Resources",
     "\\Resources\\css",
+    "\\Resources\\images",
+    "\\Resources\\js",
     "\\Views"
   ],
-  "SelectedNode": "\\Resources\\css\\StyleSheet1.css",
+  "SelectedNode": "\\Resources\\css\\lines.css",
   "PreviewInSolutionExplorer": false
 }
