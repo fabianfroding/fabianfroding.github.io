@@ -29,3 +29,25 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+}
+
+.contact-container {
+    padding: 30px;
+    color: #ccc;
+    text-align: center;
+}
+
+.contact-container .fa:hover {
+    color: #555;
+    cursor: pointer;
+}
+
+.contact-container a{
+    color:#ccc;
+    text-decoration: none;
+}
