@@ -1,68 +1,61 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title>Fabian F</title>
-    <link rel="icon" href="Resources/images/Logo.png" />
+  <title>Fabian F</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="icon" href="Resources/images/Logo.png" />
 
-    <link rel="stylesheet" href="Resources/css/main.css" />
-    <link rel="stylesheet" href="Resources/css/header.css" />
-    <link rel="stylesheet" href="Resources/css/lines.css" />
-    <link rel="stylesheet" href="Resources/css/grid.css" />
+  <link rel="stylesheet" href="Resources/css/main.css" />
+  <link rel="stylesheet" href="Resources/css/header.css" />
+  <link rel="stylesheet" href="Resources/css/grid.css" />
+  <link rel="stylesheet" href="Resources/css/accordion.css" />
 
-    <!-- <script src=""> -->
 </head>
+
 <body>
+  <!-- Start header -->
+  <header>
+    <a class="logo" href="/">
+      <img src="Resources/images/Meem.png" alt="Logo">
+    </a>
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle" />
+    <ul class="nav">
+      <li><a href="/">1</a></li>
+      <li><a href="/">2</a></li>
+      <li><a href="/">3</a></li>
+      <li><a href="/">4</a></li>
+      <li><a href="/">5</a></li>
+    </ul>
+  </header>
+  <!-- End header -->
 
-    <!-- Start header -->
-    <header>
-        <a class="logo" href="/">
-            <img src="Resources/images/Meem.png" alt="Logo">
-        </a>
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle" />
-        <ul class="nav">
-            <li><a href="/">1</a></li>
-            <li><a href="/">2</a></li>
-            <li><a href="/">3</a></li>
-            <li><a href="/">4</a></li>
-            <li><a href="/">5</a></li>
-        </ul>
-    </header>
-    <!-- End header -->
+  <!-- Start main container -->
+  <div class="main-container">
+    <div class="row">
+      <div class="column">
+        <button type="button" class="accordion__button">Code Analyzer</button>
+        <div class="accordion__content">
+          <p>A tool to analyze associations and LOC in C# projects</p>
+          <img class="code-analyzer-img" src="Resources/images/CodeAnalyzerPreview.png">
+        </div>
+      </div>
 
-    <!-- Start main container -->
-    <div class="main-container">
-        <div class="row">
-            <div class="column" style="background-color:#aaa;">
-              <h2>APCRM</h2>
-              <p>Mapper between roles defined by Wirfs-Brock and McKean and anti-patterns.</p>
-            </div>
-            <div class="column" style="background-color:#bbb;">
-              <h2>C# Code Analyzer</h2>
-              <p>Plotting tool for detecting outliyng classes based on LOC and associations.</p>
-            </div>
-          </div>
-          
-          <div class="row">
-            <div class="column" style="background-color:#ccc;">
-              <h2>Cyber Car</h2>
-              <p>Hardware</p>
-            </div>
-            <div class="column" style="background-color:#ddd;">
-              <h2>Secret Weapon</h2>
-              <p>It's secret</p>
-            </div>
-          </div>
+      <img class="separator-img" src="Resources/images/separator.png">
+
+      <div class="column">
+        <button type="button" class="accordion__button">Project 2</button>
+        <div class="accordion__content">
+          <p>Details</p>
+        </div>
+      </div>
     </div>
-    <!-- End main container -->
+  </div>
+  <!-- End main container -->
 
-    <div class="lines">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
+  <!-- Scripts -->
+  <script src="Resources/js/accordion.js"></script>
+  <!-- ------- -->
 
 </body>
-</html>
