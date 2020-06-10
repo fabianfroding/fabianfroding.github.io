@@ -34,10 +34,12 @@ footer {
     text-align: center;
     color: #888;
     font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
 
 .contact-container {
-    padding: 30px;
+    padding-top: 30px;
     color: #ccc;
     text-align: center;
 }
