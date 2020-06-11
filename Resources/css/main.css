@@ -54,3 +54,10 @@ footer {
     color:#ccc;
     text-decoration: none;
 }
+
+@media screen and (max-width: 992px) {
+    body {
+        background: url("../images/BGBright.png") fill center;
+        background-image: url("../images/BGBright.png");
+    }
+  }
