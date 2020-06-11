@@ -9,6 +9,7 @@
     color: #fff;
     text-align: left;
     transition: background 0.2s;
+    border-radius: 8px;
   }
 
   .accordion__button:after {
@@ -32,4 +33,11 @@
 
     padding: 0 15px;
     background: #eee;
+    border-radius: 6px;
+  }
+
+  .accordion__content img {
+    float: left;
+    padding-bottom: 5px;
+    border-radius: 4px;
   }

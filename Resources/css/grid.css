@@ -3,11 +3,16 @@
     width: 96.5%;
     padding: 10px;
     margin: 5px;
-    background-color:#bbb;
+    background-color:#555;
+    border-radius: 10px;
   }
   
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.column .fa {
+  color: #222;
 }

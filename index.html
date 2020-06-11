@@ -10,8 +10,9 @@
   <link rel="stylesheet" href="Resources/css/header.css" />
   <link rel="stylesheet" href="Resources/css/grid.css" />
   <link rel="stylesheet" href="Resources/css/accordion.css" />
+  <link rel="stylesheet" href="Resources//css/headline.css" />
+  <link rel="stylesheet" href="Resources//css/main-content-preview.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
@@ -23,14 +24,19 @@
     <label for="toggle">&#9776;</label>
     <input type="checkbox" id="toggle" />
     <ul class="nav">
-      <li><a href="/">1</a></li>
-      <li><a href="/">2</a></li>
-      <li><a href="/">3</a></li>
-      <li><a href="/">4</a></li>
-      <li><a href="/">5</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/">Projects</a></li>
+      <li><a href="/">Contact</a></li>
     </ul>
   </header>
   <!-- End header -->
+
+  <!-- Start headline -->
+  <div class="headline-container">
+    <h1>Fabian Fröding</h1>
+    <h2>Software Engineer</h2>
+  </div>
+  <!-- End headline -->
 
   <!-- Start main container -->
   <div class="main-container">
@@ -38,19 +44,38 @@
       <div class="column">
         <button type="button" class="accordion__button">Code Analyzer</button>
         <div class="accordion__content">
-          <p>A tool to analyze associations and LOC in C# projects</p>
           <a href="https://github.com/fabianfroding/code-analyzer">
-            <img class="code-analyzer-img" src="Resources/images/CodeAnalyzerPreview.png">
+            <i style="font-size:30px" class="fa">&#xf09b;</i>
           </a>
+          <p>A tool to analyze associations and LOC in C# projects</p>
+          <img class="project-img" src="Resources/images/CodeAnalyzerPreview.png">
         </div>
       </div>
 
       <img class="separator-img" src="Resources/images/separator.png">
 
       <div class="column">
-        <button type="button" class="accordion__button">Project 2</button>
+        <button type="button" class="accordion__button">Self-driving miniature vehicle: Intersection</button>
         <div class="accordion__content">
-          <p>Details</p>
+          <a href="https://github.com/fabianfroding/dit638-cyber-car">
+            <i style="font-size:30px" class="fa">&#xf09b;</i>
+          </a>
+          <p>Inter-communication within a micro-service architecture. Developed in lightweight docker images for arm64 CPUs. Object and color detection, self-driving and handling of intersection with multiple vehicles queued. C++, OpenCV, Machine Learning, Docker.</p>
+          <img class="project-img" src="Resources/images/intersection0.jpg">
+          <img src="Resources/images/dit638.gif">
+        </div>
+      </div>
+
+      <img class="separator-img" src="Resources/images/separator.png">
+
+      <div class="column">
+        <button type="button" class="accordion__button">UML diagram generator</button>
+        <div class="accordion__content">
+          <a href="https://github.com/noranavas/group4DIT355">
+            <i style="font-size:30px" class="fa">&#xf09b;</i>
+          </a>
+          <p>Generation of UML diagrams from Java projects. Distribution of backend workload among three different nodes in a WLAN network. Java, JavaFx, srcML.</p>
+          <img class="project-img" src="Resources/images/uml0.jpg">
         </div>
       </div>
     </div>
