@@ -26,22 +26,22 @@
     <label for="toggle">&#9776;</label>
     <input type="checkbox" id="toggle" />
     <ul class="nav">
-      <li><a href="/">Home</a></li>
-      <li><a href="/">Projects</a></li>
-      <li><a href="/">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </header>
   <!-- End header -->
 
   <!-- Start headline -->
-  <div class="headline-container">
+  <div id="home" class="headline-container">
     <h1>Fabian Fröding</h1>
     <h2>Software Engineer</h2>
   </div>
   <!-- End headline -->
 
   <!-- Start main container -->
-  <div class="main-container">
+  <div id="projects" class="main-container">
     <div class="row">
       <div class="column">
         <button type="button" class="accordion__button">Code Analyzer</button>
@@ -130,7 +130,7 @@
   </div>
 
   <!-- Start footer -->
-  <footer>
+  <footer id="contact">
     <p>&copy;
       <script>document.write(new Date().getFullYear())</script> Fabian F. All Rights Reserved.</p>
   </footer>
