@@ -6,8 +6,8 @@
 body {
     background-color: #171717;
     line-height: 1.6;
-    background: url("../images/BG.png") fill center;
-    background-image: url("../images/BG.png");
+    background: url("../images/BG2.jpg") fill center;
+    background-image: url("../images/BG2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -51,9 +51,9 @@ footer {
     margin-right: auto;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 800px) {
     body {
-        background: url("../images/BGBright.png") fill center;
-        background-image: url("../images/BGBright.png");
+        background: url("../images/BG2Bright.jpg") fill center;
+        background-image: url("../images/BG2Bright.jpg");
     }
-  }
+}

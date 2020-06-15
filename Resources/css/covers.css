@@ -29,8 +29,12 @@ ul#horizontal-list li {
 	display: inline-block;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 800px) {
     ul#horizontal-list li {
-        vertical-align: middle;
+        display: list-item; /* Make cover list vertical */
+    }
+
+    ul#horizontal-list {
+        min-width: 0px; /* Center the vertical list */
     }
 }

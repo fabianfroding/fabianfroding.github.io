@@ -5,7 +5,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    background: rgba(51,51,51, 0.67);
+    background: rgba(31, 30, 43, 0.67);
     color: #fff;
     text-align: left;
     transition: background 0.2s;
@@ -18,7 +18,7 @@
 }
 
 .accordion__button--active {
-  background: rgba(51,51,51, 0.5);
+  background: rgba(31, 30, 43, 0.5);
 }
 
 .accordion__button--active:after {
