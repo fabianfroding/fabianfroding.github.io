@@ -12,17 +12,13 @@
   <link rel="stylesheet" href="Resources/css/accordion.css" />
   <link rel="stylesheet" href="Resources//css/headline.css" />
   <link rel="stylesheet" href="Resources//css/main-content-preview.css" />
-  <link rel="stylesheet" href="Resources/css/flip.css" />
+  <link rel="stylesheet" href="Resources//css//covers.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <!-- Start header -->
   <header>
-    <a class="logo" href="/">
-      <img src="Resources/images/Meem.png" alt="Logo">
-    </a>
-    
     <label for="toggle">&#9776;</label>
     <input type="checkbox" id="toggle" />
     <ul class="nav">
@@ -40,14 +36,33 @@
   </div>
   <!-- End headline -->
 
+  <!-- Start covers -->
+  <div class="covers-container">
+    <div class="table">
+      <ul id="horizontal-list">
+        <li>
+          <a href="#project1"><img src="Resources/images/CodeAnalyzerCover.png"></a>
+        </li>
+        <li>
+          <a href="#project2"><img src="Resources/images/IntersectionCover.png"></a>
+        </li>
+        <li>
+          <a href="#project3"><img src="Resources/images/CodeAnalyzerCover.png"></a>
+        </li>
+      </ul>
+    </div>
+    <p>________________________________________</p>
+  </div>
+  <!-- End covers -->
+
   <!-- Start main container -->
   <div id="projects" class="main-container">
     <div class="row">
-      <div class="column">
+      <div class="column" id="project1">
         <button type="button" class="accordion__button">Code Analyzer</button>
         <div class="accordion__content">
           <div class="project-img">
-            <img src="Resources/images/CodeAnalyzerPreview.png">
+            <img src="Resources/images/CodeAnalyzerAnimated.gif">
           </div>
           <div class="project-info">
             <p>Get an overview of the complexity of your C# project by data visualization and detection of class anomalies.</p>
@@ -68,7 +83,7 @@
 
       <img class="separator-img" src="Resources/images/separator.png">
 
-      <div class="column">
+      <div class="column"  id="project2">
         <button type="button" class="accordion__button">Self-driving miniature vehicle: Intersection</button>
         <div class="accordion__content">
           <div class="project-img">
@@ -94,7 +109,7 @@
 
       <img class="separator-img" src="Resources/images/separator.png">
 
-      <div class="column">
+      <div class="column"  id="project3">
         <button type="button" class="accordion__button">Adaptable Game AI</button>
         <div class="accordion__content">
           <div class="project-img">
