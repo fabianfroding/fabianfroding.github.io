@@ -38,12 +38,33 @@
   font-size: 85%;
 }
 
-.project-img {
+.project1-img, .project2-img1, .project2-img2, .project3-img {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.project-img img {
+.project1-img img {
+  float: left;
+  width: 600px;
+  margin-right: 10px;
+  border-style: solid;
+}
+
+.project2-img1 img {
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  border-style: solid;
+}
+
+.project2-img2 img {
+  float: right;
+  width: 320px;
+  margin-left: 10px;
+  border-style: solid;
+}
+
+.project3-img img {
   float: left;
   width: 600px;
   margin-right: 10px;
