@@ -34,7 +34,6 @@ header ul {
 
 .nav {
     position: relative;
-    padding-right: 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -82,8 +81,15 @@ label {
     display: none;
 }
 
-    #toggle:checked + .nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+#toggle:checked + .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+    .nav a {
+        padding: 0.9em;
+        padding-top: 0.25em;
     }
+}
