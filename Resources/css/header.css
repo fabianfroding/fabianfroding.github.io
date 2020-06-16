@@ -89,7 +89,7 @@ label {
 
 @media screen and (max-width: 800px) {
     .nav a {
-        padding: 0.9em;
+        padding: 0.8em;
         padding-top: 0.25em;
     }
 }
