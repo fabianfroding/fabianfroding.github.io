@@ -14,3 +14,9 @@
 .column .fa {
   color: #222;
 }
+
+@media screen and (max-width: 800px) {
+  .row {
+    width: 100%;
+  }
+}
