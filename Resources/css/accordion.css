@@ -75,12 +75,17 @@
   margin-left: 10px;
 }
 
-.project-info a {
+.project-info-ext {
+  padding-top: 30px;
+  margin-left: 10px;
+}
+
+.project-info a, .project-info-ext a {
   color:#eee;
   text-decoration: none;
 }
 
-.project-info .fa {
+.project-info .fa, .project-info-ext .fa {
   color:#eee;
   float: left;
 }
