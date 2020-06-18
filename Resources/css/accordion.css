@@ -93,3 +93,14 @@
 .project-info-github-text {
   margin-left: 10px;
 }
+
+@media screen and (max-width: 800px) {
+  .project-info {
+    margin-left: 0;
+  }
+
+  .project1-img img {
+    float: none;
+    width: 225px;
+  }
+}
