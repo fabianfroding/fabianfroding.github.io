@@ -104,13 +104,13 @@
     width: 300px;
   }
 
-  .project2.info {
-    padding-top: 5px;
-  }
-
   .project-info-ext {
     padding-top: 10px;
     margin-left: 0;
+  }
+
+  .project2-img1 {
+    padding-bottom: 5px;
   }
 
   .project2-img1 img {
