@@ -25,12 +25,12 @@ footer {
     text-align: center;
     color: #AAA;
     font-size: 13px;
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 40px;
 }
 
 .contact-container {
-    padding-top: 30px;
+    padding-bottom: 15px;
     color: #ccc;
     text-align: center;
 }
@@ -49,6 +49,8 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 @media screen and (max-width: 800px) {
