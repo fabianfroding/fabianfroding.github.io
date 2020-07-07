@@ -1,0 +1,16 @@
+.column {
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+  
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column .fa {
+  color: #222;
+}
