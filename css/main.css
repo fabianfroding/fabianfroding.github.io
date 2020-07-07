@@ -253,6 +253,7 @@ li {
 .about-details p {
     color: #a1d3eb;
     line-height: 3.5rem;
+    text-align: center; /* Remove when adding profile pic */
 }
 
 .profile-img {
