@@ -1,165 +1,254 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Fabian F</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <link rel="icon" href="Resources/images/Logo.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="Resources/css/main.css" />
-  <link rel="stylesheet" href="Resources/css/header.css" />
-  <link rel="stylesheet" href="Resources/css/grid.css" />
-  <link rel="stylesheet" href="Resources/css/accordion.css" />
-  <link rel="stylesheet" href="Resources//css/headline.css" />
-  <link rel="stylesheet" href="Resources//css/main-content-preview.css" />
-  <link rel="stylesheet" href="Resources//css//covers.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fabian F</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="resources/css/main.css">
 </head>
-
 <body>
-  <!-- Start header -->
-  <header>
-    <label for="toggle">&#9776;</label>
-    <input type="checkbox" id="toggle" />
-    <ul class="nav">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </header>
-  <!-- End header -->
-
-
-  <!-- Start headline -->
-  <div id="home" class="headline-container">
-    <h1>Fabian Fröding</h1>
-    <h2>Software Engineer</h2>
-  </div>
-  <!-- End headline -->
-
-  <!-- Start covers -->
-  <div class="covers-container">
-    <div class="table">
-      <ul id="horizontal-list">
-        <li>
-          <a href="#project1"><img class="project1-cover-img" src="Resources/images/CodeAnalyzerCover.png"></a>
-        </li>
-        <li>
-          <a href="#project2"><img src="Resources/images/IntersectionCover.png"></a>
-        </li>
-        <li>
-          <a href="#project3"><img src="Resources/images/PlanetaryRevelationCover.png"></a>
-        </li>
-      </ul>
-    </div>
-    <p>________________________________________</p>
-  </div>
-  <!-- End covers -->
-
-  <!-- Start main container -->
-  <div id="projects" class="main-container">
-    <div class="row">
-      <div class="column" id="project1">
-        <div class="accordion__button">Code Analyzer</div>
-        <div class="accordion__content">
-          <div class="project1-img">
-            <img src="Resources/images/CodeAnalyzerAnimated.gif">
-          </div>
-          <div class="project-info">
-            <p>Get an overview of the complexity of your C# project by data visualization and detection of class
-              anomalies.</p>
-            <br>
-            <p style="font-weight:bold">Features:</p>
-            <p>Plot associations and LOC in C# classes in various data visualization charts.</p>
-            <br>
-            <p style="font-weight:bold">Technologies:</p>
-            <p>C#.NET, WPF, Live Charts, D3.js.</p>
-            <br>
-            <a href="https://github.com/fabianfroding/code-analyzer">
-              <i style="font-size:30px" class="fa">&#xf09b;</i>
-              <p class="project-info-github-text">Github</p>
-            </a>
-          </div>
+    <header>
+        <!--
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
         </div>
-      </div>
-
-      <img class="separator-img" src="Resources/images/separator.png">
-
-      <div class="column" id="project2">
-        <div class="accordion__button">Autonomous Vehicle: Intersection</div>
-        <div class="accordion__content">
-          <div class="project2-img1">
-            <img src="Resources/images/AutoVehicle.jpg">
-          </div>
-          <div class="project2-img2">
-            <img src="Resources/images/AutoVehicle.gif">
-          </div>
-          <div class="project-info">
-            <p>Self-driving miniature vehicle specialized in handling traffic situations in an intersection. Built with
-              Raspberry Pi and Beagle Bone boards.</p>
-          </div>
-          <div class="project-info-ext">
-            <p style="font-weight:bold">Features:</p>
-            <p>Object and color detection, Micro-service inter-communication.</p>
-            <br>
-            <p style="font-weight:bold">Technologies:</p>
-            <p>C++, OpenCV, Machine Learning, Docker.</p>
-            <br>
-            <a href="https://github.com/fabianfroding/dit638-cyber-car">
-              <i style="font-size:30px" class="fa">&#xf09b;</i>
-              <p class="project-info-github-text">Github</p>
-            </a>
-          </div>
+        -->
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="#landing-text" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <!--
+                <li>
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                -->
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="landing-text" id="landing-text">
+            <h1>Fabian Fröding</h1>
+            <h6>Software Engineer</h6>
         </div>
-      </div>
+    </header>
 
-      <img class="separator-img" src="Resources/images/separator.png">
-
-      <div class="column" id="project3">
-        <div class="accordion__button">Planetary Revelation</div>
-        <div class="accordion__content">
-          <div class="project3-img">
-            <img src="Resources/images/PlanetaryRevelationAnimated.gif">
-          </div>
-          <div class="project-info">
-            <p>A space-exploration game made in Unity 3D (work in progress).</p>
-            <br>
-            <p style="font-weight:bold">Features:</p>
-            <p>Control a spaceship in a 3D solar system and explore various planets.</p>
-            <br>
-            <p style="font-weight:bold">Technologies:</p>
-            <p>C#, Unity.</p>
-            <br>
-            <a href="https://github.com/fabianfroding/space-exploration-scripts">
-              <i style="font-size:30px" class="fa">&#xf09b;</i>
-              <p class="project-info-github-text">Github</p>
-            </a>
-          </div>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="150">
+                <img src="resources/images/profile.jpeg">
+            </div>
+            <div class="about-details" data-aos="fade-left" data-aos-delay="300">
+                <div class="about-heading">
+                    <h1>About</h1>
+                    <h6>Myself</h6>
+                </div>
+                <p>HI, I'M <strong>FABIAN</strong>.</p>
+                <p>I am a developer with an interest in <strong>Automatization</strong>, <strong>Software Architecture</strong>, <strong>Statistics</strong>, and <strong>Game Development</strong>.</p>
+                <p>Currently seeking opportunities within <strong>Software Development</strong> and <strong>Data Science</strong>.</p>
+                
+                <div class="social-media">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="https://github.com/fabianfroding" class="icon-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- End main container -->
+    </section>
 
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Services</h1>
+                <h6>What I Can Do</h6>
+            </div>
+            <div class="my-skills">
+                <div class="skill" data-aos="fade-in" data-aos-delay="150">
+                    <div class="icon-container">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <h1>Full-Stack Development</h1>
+                    <p>Development of Full-Stack Software Products in Web, Desktop, Distributed and Embedded Systems.</p>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="300">
+                    <div class="icon-container">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h1>Data Analytics</h1>
+                    <p>Experienced in statistics, data analysis and visualization.</p>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="450">
+                    <div class="icon-container">
+                        <i class="fa fa-cogs"></i>
+                    </div>
+                    <h1>Software Architecture</h1>
+                    <p>
+                        Knowledge of the importance of software design to make systems maintainable and understandable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Portfolio</h1>
+                <h6>Recent Projects</h6>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="150">
+                    <img src="resources/images/portitem00.gif" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+                    <h6>Software Development</h6>
+                    <h1>Code Analyzer</h1>
+                    <p>
+                        A tool to visualize the classes in a C# project based on associations and LOC.
+                        Integration of D3.js into a desktop application.
+                    </p>
+                    <p class="cta">Technologies: <strong>C#</strong>, <strong>.NET</strong>, <strong>WPF</strong>, <strong>LiveCharts</strong>, <strong>D3.js</strong>.</p>
+                    <br><br>
+                    <a href="https://github.com/fabianfroding/code-analyzer" class="project-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!--
+                    <a href="#" class="cta">View Details</a>
+                    -->
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="450">
+                    <h6>Software Development</h6>
+                    <h1>Autonomous Vehicle: Intersection</h1>
+                    <p>
+                        Self-driving miniature vehicle specialized in handling traffic situations in an intersection.
+                        Built with <strong>Raspberry Pi</strong> and <strong>Beagle Bone</strong> boards.
+                    </p>
+                    <p class="cta">Technologies: <strong>C++</strong>, <strong>OpenCV</strong>, <strong>Machine Learning</strong>, <strong>Docker</strong>.</p>
+                    <br><br>
+                    <a href="https://github.com/fabianfroding/dit638-cyber-car" class="project-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!--
+                    <a href="#" class="cta">View Details</a>
+                    -->
+                </div>
+                <div class="portfolio-img" data-aos="fade-left" data-aos-delay="600">
+                    <img src="resources/images/portitem01.gif" alt="">
+                </div>
+                
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="750">
+                    <img src="resources/images/portitem02.png" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="900">
+                    <h6>Game Development</h6>
+                    <h1>Space Exploration Adventure</h1>
+                    <p>A game made in Unity 3D where the player explores a vast solar system with orbiting planets and a custom gravitational system.</p>
+                    <p class="cta">Technologies: <strong>C#</strong>, <strong>Unity.</p>
+                    <br><br>
+                    <a href="https://github.com/fabianfroding/space-exploration-scripts" class="project-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!--
+                    <a href="#" class="cta">View Details</a>
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Start footer -->
-  <footer id="contact">
-    <div class="contact-container">
-      <a href="mailto:fabian.froding@gmail.com">
-        <i style="font-size:24px" class="fa">&#xf003; &nbsp;</i>
-      </a>
-      <a href="https://github.com/fabianfroding" target="_blank">
-        <i style="font-size:24px" class="fa">&#xf09b;</i>
-      </a>
-    </div>
+    <!--
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Experience</h1>
+                <h6>Past and Current Jobs</h6>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="150">
+                <ul>
+                    <li class="date" data-date="2011 - Present">
+                        <h1>Google</h1>
+                        <p>Dummy text</p>
+                    </li>
+                    <li class="date" data-date="2008 - 2011">
+                        <h1>Facebook</h1>
+                        <p>Dummy text</p>
+                    </li>
+                    <li class="date" data-date="2002 - 2007">
+                        <h1>Microsoft</h1>
+                        <p>Dummy text</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    -->
 
-    <p>&copy;
-      <script>document.write(new Date().getFullYear())</script> Fabian F.</p>
-  </footer>
-  <!-- End footer -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Contact</h1>
+                <h6>Let's work together.</h6>
+            </div>
+            <!--
+            <form action="" data-aos="fade-up" data-aos-delay="150">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                <label for="service">Services:</label>
+                <select name="services" id="service">
+                    <option value="">Software Development</option>
+                    <option value="">Data Analysis</option>
+                    <option value="">Game Development</option>
+                </select>
+                <label for="subject">Subject:</label>
+                <textarea name="subject" id="subject" cols="10" rows="10" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+            -->
+            <a href="mailto:fabian.froding@gmail.com" class="mail-icon">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </div>
+    </section>
 
-  <!-- Scripts -->
-  <!-- ------- -->
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <p>&copy;<script>document.write(new Date().getFullYear())</script> Fabian F.</p>
+    </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="resources/js/main.js"></script>
 </body>
+</html>
