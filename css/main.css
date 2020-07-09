@@ -456,6 +456,11 @@ li {
 .contact {
 }
 */
+.contact .container p {
+    font-size: 2.25rem;
+    text-align: center;
+    color: var(--gradient-theme-start);
+}
 
 /* TODO: Fix so only icon links to mail, not entire width of the div */
 .mail-icon i {
