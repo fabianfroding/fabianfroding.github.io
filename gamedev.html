@@ -13,11 +13,31 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gamedev.css">
+    <link rel="stylesheet" href="css/gamedev-parallax.css">
 </head>
 
 <body>
     <header>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="#landing-text" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">Projects</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <img src="images/sitebg-gamedev.jpg" alt="" class="parallax">
+        </section>
         <div class="landing-text" id="landing-text">
             <h1>Fabian Fröding's</h1>
             <h6>Gamedev Corner</h6>
@@ -25,12 +45,159 @@
     </header>
 
     <section class="about" id="about">
-        <p>This page is under construction - stay tuned!</p>
+        <div class="container">
+            
+            <div class="" data-aos="fade-right" data-aos-delay="150">
+                <img src="images/profile-gamedev.jpg">
+            </div>
+            
+            <div class="about-details" data-aos="fade-left" data-aos-delay="300">
+                <div class="about-heading">
+                    <h1>Hello!</h1>
+                    <h6></h6>
+                </div>
+                <p><strong></strong></p>
+                <p>This page is currently under construction.</p>
+                <p>Stay tuned!</p>
+                
+                <!--div class="social-media">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="https://github.com/fabianfroding" class="icon-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div-->
+                
+            </div>
+        </div>
     </section>
 
-    <footer>
-    
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Projects</h1>
+                <!--h6></h6-->
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="150">
+                    <img src="images/portitem-2dplatformer.png" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+                    <h6>Game Development</h6>
+                    <h1>2D Platformer</h1>
+                    <!--p>
+                        A tool to visualize the classes in a C# project based on associations and LOC.
+                        Integration of D3.js into a desktop application.
+                    </p-->
+                    <p class="cta">Technologies: <strong>C#</strong>, <strong>Unity</strong>, <strong>Plastic SCM</strong>.</p>
+                    <br><br>
+                    <!--a href="https://github.com/fabianfroding/code-analyzer" class="project-link">
+                        <i class="fab fa-github"></i>
+                    </a-->
+                    <!--
+                    <a href="#" class="cta">View Details</a>
+                    -->
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="150">
+                    <h6>Modding</h6>
+                    <h1>Dungeon Crawler</h1>
+                    <!--p>
+                        Self-driving miniature vehicle specialized in handling traffic situations in an intersection.
+                        Built with <strong>Raspberry Pi</strong> and <strong>Beagle Bone</strong> boards.
+                    </p-->
+                    <p class="cta">Technologies: <strong>Warcraft 3 World Editor</strong>, <strong>VJASS</strong>.</p>
+                    <br><br>
+                    <!--a href="https://github.com/fabianfroding/dit638-cyber-car" class="project-link">
+                        <i class="fab fa-github"></i>
+                    </a-->
+                    <!--
+                    <a href="#" class="cta">View Details</a>
+                    -->
+                </div>
+                <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
+                    <img src="images/portitem-vod2.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="150">
+                    <img src="images/portitem-space-game.png" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+                    <h6>Game Development</h6>
+                    <h1>Planetary Revelation</h1>
+                    <!--p>
+                        A shop system that handles a product register, and an integrator that can convert the register into the format of other systems.
+                    </p-->
+                    <p class="cta">Technologies: <strong>C#</strong>, <strong>Unity</strong>.</p>
+                    <br><br>
+                    <!--a href="https://github.com/fabianfroding/media-shop-and-integrator" class="project-link">
+                        <i class="fab fa-github"></i>
+                    </a-->
+                    <!--
+                    <a href="#" class="cta">View Details</a>
+                    -->
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="150">
+                    <h6>Modding</h6>
+                    <h1>Level Design</h1>
+                    <!--p>
+                        A game made in Unity 3D where the player explores a vast solar system with orbiting planets and a custom gravitational system.
+                    </p-->
+                    <p class="cta">Technologies: <strong>Warcraft 3 World Editor</strong>.</p>
+                    <br><br>
+                    <!--a href="https://github.com/fabianfroding/space-exploration-scripts" class="project-link">
+                        <i class="fab fa-github"></i>
+                    </a-->
+                    <!--
+                    <a href="#" class="cta">View Details</a>
+                    -->
+                </div>
+                <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
+                    <img src="images/portitem-tft1.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Contact</h1>
+                <h6>Let's work together.</h6>
+            </div>
+            <div class="contact-icons">
+                <a href="mailto:fabian.froding@gmail.com" class="mail-icon">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </div>
+            <br>
+            <!--p>0736236760</p-->
+        </div>
+        
+    </section>
+
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <p>&copy;<script>document.write(new Date().getFullYear())</script> Fabian F.</p>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/parallax.js"></script>
 </body>
 
 </html>
