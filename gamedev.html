@@ -9,12 +9,15 @@
     <link rel="icon" href="images/logo.png" />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/gamedev.css">
     <link rel="stylesheet" href="css/gamedev-parallax.css">
+    <link rel="stylesheet" href="css/slideshow.css">
 </head>
 
 <body>
@@ -39,18 +42,18 @@
             <img src="images/gamedev-parallax.jpg" alt="" class="parallax">
         </section>
         <div class="landing-text" id="landing-text">
-            <h1>Fabian Fröding's</h1>
-            <h6>Gamedev Corner</h6>
+            <h1>Fabian F</h1>
+            <h6>Software Engineer & Game Developer</h6>
         </div>
     </header>
 
     <section class="about" id="about">
         <div class="container">
-            
+
             <div class="" data-aos="fade-right" data-aos-delay="150">
                 <img src="images/profile-gamedev.jpg">
             </div>
-            
+
             <div class="about-details" data-aos="fade-left" data-aos-delay="300">
                 <div class="about-heading">
                     <h1>Hello!</h1>
@@ -81,7 +84,8 @@
                         A simple 2D Platformer focused on combat and exploration.
                         Inspired by Hollow Knight and The Legend of Zelda: Majora's Mask.
                     </p>
-                    <p class="cta">Technologies: <strong>C#</strong>, <strong>Unity</strong>, <strong>Plastic SCM</strong>.</p>
+                    <p class="cta">Technologies: <strong>C#</strong>, <strong>Unity</strong>, <strong>Plastic
+                            SCM</strong>.</p>
                     <br><br>
                     <!--a href="https://github.com/fabianfroding/code-analyzer" class="project-link">
                         <i class="fab fa-github"></i>
@@ -106,19 +110,46 @@
                     <!--a href="#" class="cta">View Details</a-->
                 </div>
                 <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
-                    <img src="images/portitem-vod2.png" alt="">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="images/portitem-vod1.png" alt="">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/portitem-vod2.png" alt="">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/portitem-vod3.png" alt="">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                 </div>
             </div>
 
             <div class="portfolio-item">
                 <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="150">
-                    <img src="images/portitem-space-game.png" alt="">
+                    <div class="slideshow-container">
+                        <div class="mySlides3 fade">
+                            <img src="images/portitem-spacegame1.png" alt="">
+                        </div>
+                        <div class="mySlides3 fade">
+                            <img src="images/portitem-spacegame2.png" alt="">
+                        </div>
+                        <div class="mySlides3 fade">
+                            <img src="images/portitem-spacegame3.png" alt="">
+                        </div>
+                        <div class="mySlides3 fade">
+                            <img src="images/portitem-spacegame4.png" alt="">
+                        </div>
+                        <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                    </div>
                 </div>
                 <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
                     <h6>Game Development</h6>
                     <h1>Planetary Revelation</h1>
                     <p>
-                        A space exploration game set in a solar system with orbiting planets.
+                        An experimental space-exploration game set in a solar system with orbiting planets.
                     </p>
                     <p class="cta">Technologies: <strong>C#</strong>, <strong>Unity</strong>.</p>
                     <br><br>
@@ -144,7 +175,19 @@
                     <!--a href="#" class="cta">View Details</a-->
                 </div>
                 <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
-                    <img src="images/portitem-tft1.png" alt="">
+                    <div class="slideshow-container">
+                        <div class="mySlides2 fade">
+                            <img src="images/portitem-tft1.png" alt="">
+                        </div>
+                        <div class="mySlides2 fade">
+                            <img src="images/portitem-tft2.png" alt="">
+                        </div>
+                        <div class="mySlides2 fade">
+                            <img src="images/portitem-tft3.png" alt="">
+                        </div>
+                        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
                 </div>
             </div>
 
@@ -155,7 +198,7 @@
         <div class="container">
             <div class="section-heading">
                 <h1>Contact</h1>
-                <h6>Let's work together.</h6>
+                <h6>(Not the movie from 1997)</h6>
             </div>
             <div class="contact-icons">
                 <a href="mailto:fabian.froding@gmail.com" class="mail-icon">
@@ -165,20 +208,23 @@
             <br>
             <!--p>0736236760</p-->
         </div>
-        
+
     </section>
 
     <footer class="copyright">
         <div class="up" id="up">
             <i class="fas fa-chevron-up"></i>
         </div>
-        <p>&copy;<script>document.write(new Date().getFullYear())</script> Fabian F.</p>
+        <p>&copy;
+            <script>document.write(new Date().getFullYear())</script> Fabian F.
+        </p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 
 </html>
