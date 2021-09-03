@@ -670,11 +670,11 @@ input[type="submit"]:hover {
         /*font-size: 1.6rem;*/
     }
 
-    #nav-services {
+    #nav-about {
         display: none;
     }
 
-    #nav-exp {
+    #nav-services {
         display: none;
     }
 
