@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fabian F</title>
+    <link rel="icon" href="images/logo.png" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <!--
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+        -->
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="#landing-text" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="landing-text" id="landing-text">
+            <h1>Fabian Fröding</h1>
+            <h6>Software Engineer</h6>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <!--
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="150">
+                <img src="images/profile.png">
+            </div>
+            -->
+            <div class="about-details" data-aos="fade-left" data-aos-delay="300">
+                <div class="about-heading">
+                    <h1>About</h1>
+                    <h6>Myself</h6>
+                </div>
+                <p>HI, I'M <strong>FABIAN</strong>.</p>
+                <p>I am a developer with an interest in <strong>Software Architecture</strong>, <strong>User Experience</strong> and <strong>Game Development</strong>.</p>
+                <!--p>Currently seeking opportunities within <strong>User Experience</strong> and <strong>Web Development</strong>.</p-->
+                
+                <div class="social-media">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="https://github.com/fabianfroding" class="icon-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Services</h1>
+                <h6>What I Can Do</h6>
+            </div>
+            <div class="my-skills">
+
+                <div class="skill" data-aos="fade-in" data-aos-delay="450">
+                    <div class="icon-container">
+                        <i class="fa fa-cogs"></i>
+                    </div>
+                    <h1>Software Design</h1>
+                    <p>
+                        Knowledgeable in software design to make systems maintainable and understandable.
+                    </p>
+                </div>
+
+                <div class="skill" data-aos="fade-in" data-aos-delay="150">
+                    <div class="icon-container">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <h1>Full-Stack Development</h1>
+                    <p>Development of Full-Stack Software Products in Web, Desktop, Distributed and Embedded Systems.</p>
+                </div>
+
+                <div class="skill" data-aos="fade-in" data-aos-delay="300">
+                    <div class="icon-container">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h1>Game Development</h1>
+                    <p>Experienced in programming and designing games and mods.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Portfolio</h1>
+                <h6>Past Projects</h6>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="150">
+                    <img src="images/portitem-code-analyzer.gif" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+                    <h6>Software Development</h6>
+                    <h1>C# Code Analyzer</h1>
+                    <p>
+                        A tool to visualize the classes in a C# project based on associations and LOC.
+                        Integration of D3.js into a desktop application.
+                    </p>
+                    <p class="cta">Technologies: <strong>C#</strong>, <strong>.NET</strong>, <strong>WPF</strong>, <strong>LiveCharts</strong>, <strong>D3.js</strong>.</p>
+                    <br><br>
+                    <a href="https://github.com/fabianfroding/code-analyzer" class="project-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!--
+                    <a href="#" class="cta">View Details</a>
+                    -->
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="150">
+                    <h6>System Development</h6>
+                    <h1>Autonomous Vehicle: Intersection</h1>
+                    <p>
+                        Self-driving miniature vehicle specialized in handling traffic situations in an intersection.
+                        Built with <strong>Raspberry Pi</strong> and <strong>Beagle Bone</strong> boards.
+                    </p>
+                    <p class="cta">Technologies: <strong>C++</strong>, <strong>OpenCV</strong>, <strong>Machine Learning</strong>, <strong>Docker</strong>.</p>
+                    <br><br>
+                    <a href="https://github.com/fabianfroding/dit638-cyber-car" class="project-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!--
+                    <a href="#" class="cta">View Details</a>
+                    -->
+                </div>
+                <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
+                    <img src="images/portitem-cyber-car.gif" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="150">
+                    <img src="images/portitem-mediashop.jpg" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+                    <h6>Software Development</h6>
+                    <h1>Media Shop & Integrator</h1>
+                    <p>
+                        A shop system that handles a product register, and an integrator that can convert the register into the format of other systems.
+                    </p>
+                    <p class="cta">Technologies: <strong>C#</strong>, <strong>.NET</strong>, <strong>Windows Forms</strong>, <strong>Entity Framework Core</strong>.</p>
+                    <br><br>
+                    <a href="https://github.com/fabianfroding/media-shop-and-integrator" class="project-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!--
+                    <a href="#" class="cta">View Details</a>
+                    -->
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="150">
+                    <h6>Game Development</h6>
+                    <h1>Space Exploration Game</h1>
+                    <p>
+                        A game made in Unity 3D where the player explores a vast solar system with orbiting planets and a custom gravitational system.
+                    </p>
+                    <p class="cta">Technologies: <strong>C#</strong>, <strong>Unity</strong>.</p>
+                    <br><br>
+                    <a href="https://github.com/fabianfroding/space-exploration-scripts" class="project-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!--
+                    <a href="#" class="cta">View Details</a>
+                    -->
+                </div>
+                <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
+                    <img src="images/portitem-spacegame1.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="150">
+                    <img src="images/portitem-distr-system.jpg" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+                    <h6>Software Development</h6>
+                    <h1>Source Code Modeler</h1>
+                    <p>
+                        A program that can generate a UML class-diagram based on source code input.
+                        Back-end distributed among three nodes in a WLAN network.
+                    </p>
+                    <p class="cta">Technologies: <strong>Java</strong>, <strong>JavaFX</strong>, <strong>SrcML</strong>.</p>
+                    <br><br>
+                    <a href="https://github.com/noranavas/group4DIT355" class="project-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!--
+                    <a href="#" class="cta">View Details</a>
+                    -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Experience & Education</h1>
+                <h6>Past and Current Occupations</h6>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="150">
+                <ul>
+                    <li class="date" data-date="2021 - Present">
+                        <h1>Evoma</h1>
+                        <p>Software Engineer</p>
+                    </li>
+                    <li class="date" data-date="2020 - 2021">
+                        <h1>Smoofit</h1>
+                        <p>Software Developer</p>
+                    </li>
+                    <li class="date" data-date="2017 - 2020">
+                        <h1>University of Gothenburg</h1>
+                        <p>BSc in Software Engineering and Management</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Contact</h1>
+                <h6>Let's work together.</h6>
+            </div>
+            <!--
+            <form action="" data-aos="fade-up" data-aos-delay="150">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                <label for="service">Services:</label>
+                <select name="services" id="service">
+                    <option value="">Software Development</option>
+                    <option value="">Data Analysis</option>
+                    <option value="">Game Development</option>
+                </select>
+                <label for="subject">Subject:</label>
+                <textarea name="subject" id="subject" cols="10" rows="10" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+            -->
+            <div class="contact-icons">
+                <a href="mailto:fabian.froding@gmail.com" class="mail-icon">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </div>
+            <br>
+            <p>0736236760</p>
+        </div>
+        
+    </section>
+
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <p>&copy;<script>document.write(new Date().getFullYear())</script> Fabian F.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
