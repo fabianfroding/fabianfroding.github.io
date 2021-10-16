@@ -255,7 +255,7 @@ li {
 .about-details p {
     color: #ebd3a1;
     line-height: 3.5rem;
-    text-align: center; /* Remove when adding profile pic */
+    text-align: center; /* Remove when adding profile pic ? */
 }
 
 .profile-img {
@@ -278,6 +278,25 @@ li {
 
 .fa-github:hover {
     color: #b26742;
+}
+
+.about-list .list-heading {
+    color: #ebd3a1;
+    line-height: 3.5rem;
+}
+
+.about-list .list-info {
+    color: #e7e0d0;
+    line-height: 2.5rem;
+    font-size: 135%;
+    font-weight: 105%;
+}
+
+.about-list ul {
+    color: #e7e0d0;
+    line-height: 2.25rem;
+    font-size: 120%;
+    padding-left: 10px;
 }
 /* END ABOUT */
 
