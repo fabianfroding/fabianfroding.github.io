@@ -255,12 +255,20 @@ li {
 .about-details p {
     color: #ebd3a1;
     line-height: 3.5rem;
-    text-align: center; /* Remove when adding profile pic ? */
+    text-align: center;
 }
 
 .profile-img {
     flex: 1;
     margin-right: 5rem;
+    align-content: center;
+}
+
+.profile-img img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
 .about-details {
