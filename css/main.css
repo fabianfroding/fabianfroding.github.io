@@ -1,7 +1,7 @@
 /* CUSTOM PROPERTIES */
 :root {
-    --gradient-theme-start: #ffe138bb;
-    --gradient-theme-end: #fd7e5744;
+    --gradient-theme-start: #63bcccbb;
+    --gradient-theme-end: #7483b3be;
   }
 /* END CUSTOM PROPERTIES */
 
@@ -23,7 +23,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #111 !important; /* Prevents white flash on page change. */
-    background: url("../images/sitebg-gamedev.jpg") no-repeat center fixed;
+    background: url("../images/sitebg.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
@@ -113,7 +113,7 @@ header {
     height: 6.5vh;
     position: fixed;
     z-index: 50;
-    background-color: rgba(20, 10, 5, 0.975);
+    background-color: rgba(5, 10, 20, 0.975);
     /*
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
@@ -253,7 +253,7 @@ li {
 }
 
 .about-details p {
-    color: #ebd3a1;
+    color: #a1d3eb;
     line-height: 3.5rem;
     text-align: center;
 }
@@ -285,23 +285,23 @@ li {
 }
 
 .fa-github:hover {
-    color: #b26742;
+    color: #4267b2;
 }
 
 .about-list .list-heading {
-    color: #ebd3a1;
+    color: #a1d3eb;
     line-height: 3.5rem;
 }
 
 .about-list .list-info {
-    color: #e7e0d0;
+    color: #d0e0e7;
     line-height: 2.5rem;
     font-size: 135%;
     font-weight: 105%;
 }
 
 .about-list ul {
-    color: #e7e0d0;
+    color: #d0e0e7;
     line-height: 2.25rem;
     font-size: 120%;
     padding-left: 10px;
@@ -333,7 +333,7 @@ li {
 
 .skill p {
     font-size: 1.2rem;
-    color: #ffb282;
+    color: #82b2ff;
 }
 
 .icon-container {
@@ -353,7 +353,7 @@ li {
 }
 
 .icon-container i {
-    color: ffe838;
+    color: #38e8ff;
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
@@ -395,7 +395,7 @@ li {
 
 .portfolio-description p {
     font-size: 1.25rem;
-    color: #ffb282;
+    color: #82b2ff;
 }
 
 .portfolio-description .cta {
@@ -403,7 +403,7 @@ li {
     margin-top: 2.5rem;
     font-size: 1.33rem;
     text-transform: uppercase;
-    color: #ffd1b5;
+    color: #b5d1ff;
     transition: color 650ms;
 }
 
@@ -414,9 +414,9 @@ li {
 
 .portfolio-description .cta a :hover {
     text-decoration: underline;
-	text-decoration-color: #b26742;
-	-webkit-text-decoration-color: #b26742;
-    color: #b26742;
+	text-decoration-color: #4267b2;
+	-webkit-text-decoration-color: #4267b2;
+    color: #4267b2;
 }
 
 /*
@@ -547,7 +547,7 @@ li {
 }
 
 .mail-icon:hover i {
-    color: #b26742;
+    color: #4267b2;
 }
 
 .form {
@@ -580,7 +580,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    color: #3f1e22;
+    color: #221e3f;
     background-color: var(--gradient-theme-end);
 }
 
@@ -624,13 +624,13 @@ input[type="submit"]:hover {
 /* ANIMATIONS */
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(253, 191, 87, 0.99);
+        box-shadow: 0 0 0 0 rgba(87, 191, 253, 0.99);
     }
     70% {        
-        box-shadow: 0 0 0 2rem rgba(253, 191, 87, 0);
+        box-shadow: 0 0 0 2rem rgba(87, 191, 253, 0);
     }
     100% {        
-        box-shadow: 0 0 0 0 rgba(253, 191, 87, 0);
+        box-shadow: 0 0 0 0 rgba(87, 191, 253, 0);
     }
 }
 /* END ANIMATIONS */
@@ -638,7 +638,7 @@ input[type="submit"]:hover {
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
     body {
-        background: url("../images/sitebg-gamedev.jpg") no-repeat center fixed;
+        background: url("../images/sitebg.jpg") no-repeat center fixed;
         background-size: cover;
     }
 
