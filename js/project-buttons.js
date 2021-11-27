@@ -3,7 +3,7 @@ function toggleSEProjects() {
     showGDPortfolio(false);
 
     const el = document.getElementById("se-projects-btn");
-    el.style.backgroundColor = '#fd7e5744';
+    el.style.backgroundColor = '#577efd44';
     const el2 = document.getElementById("gd-projects-btn");
     el2.style.backgroundColor = '#00000000';
 }
@@ -13,7 +13,7 @@ function toggleGDProjects() {
     showGDPortfolio(true);
 
     const el = document.getElementById("gd-projects-btn");
-    el.style.backgroundColor = '#fd7e5744';
+    el.style.backgroundColor = '#577efd44';
     const el2 = document.getElementById("se-projects-btn");
     el2.style.backgroundColor = '#00000000';
 }

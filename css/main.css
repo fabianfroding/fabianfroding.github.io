@@ -435,7 +435,7 @@ li {
 }
 
 .project-buttons button {
-    background-color: var(--gradient-theme-end);
+    background-color: #577efd44;
     color: rgba(255, 255, 255, .7);
     border: none;
     border-radius: 12px;
