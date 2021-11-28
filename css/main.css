@@ -341,7 +341,7 @@ li {
 
 .skill p {
     font-size: 1.2rem;
-    color: #82b2ff;
+    color: #93C3ff;
 }
 
 .icon-container {
@@ -403,7 +403,7 @@ li {
 
 .portfolio-description p {
     font-size: 1.25rem;
-    color: #82b2ff;
+    color: #b5d1ff;
 }
 
 .portfolio-description .cta {
@@ -416,15 +416,16 @@ li {
 }
 
 .portfolio-description .cta a {
-    text-decoration: underline;
-    color: #FFF;
+    text-decoration: none;
+    color: #5378F6;
 }
 
 .portfolio-description .cta a :hover {
     text-decoration: underline;
-	text-decoration-color: #4267b2;
-	-webkit-text-decoration-color: #4267b2;
-    color: #4267b2;
+    text-decoration: underline;
+	text-decoration-color: #5378F6;
+	-webkit-text-decoration-color: #5378F6;
+    color: #5378F6;
 }
 
 /*

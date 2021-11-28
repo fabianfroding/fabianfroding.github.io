@@ -27,4 +27,4 @@ function showGDPortfolio(val) {
 }
 
 // Async call on page load.
-toggleSEProjects();
+toggleGDProjects();
