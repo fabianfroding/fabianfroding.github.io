@@ -379,7 +379,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .portfolio-item:last-child {
@@ -459,10 +460,6 @@ li {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-}
-
-.has-padding-bottom {
-    padding-bottom: 40px;
 }
 
 /* END PORTFOLIO */
