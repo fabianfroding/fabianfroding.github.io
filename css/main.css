@@ -262,8 +262,13 @@ li {
 
 .about-details p {
     color: #a1d3eb;
-    line-height: 3.5rem;
+    font-size: 15px;
+    line-height: 2.8rem;
     text-align: center;
+}
+
+.about-details p strong {
+    color: #71a1eb;
 }
 
 .profile-img {
@@ -340,7 +345,8 @@ li {
 }
 
 .skill p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
     color: #93C3ff;
 }
 
