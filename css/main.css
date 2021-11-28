@@ -417,15 +417,15 @@ li {
 
 .portfolio-description .cta a {
     text-decoration: none;
-    color: #5378F6;
+    color: #7878FF;
 }
 
 .portfolio-description .cta a :hover {
     text-decoration: underline;
     text-decoration: underline;
-	text-decoration-color: #5378F6;
-	-webkit-text-decoration-color: #5378F6;
-    color: #5378F6;
+	text-decoration-color: #7878FF;
+	-webkit-text-decoration-color: #7878FF;
+    color: #7878FF;
 }
 
 /*
