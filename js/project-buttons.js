@@ -25,3 +25,6 @@ function showSEPortfolio(val) {
 function showGDPortfolio(val) {
     document.getElementById("portfolio-gd").style.display = val ? "block" : "none";
 }
+
+// Async call on page load.
+toggleSEProjects();
