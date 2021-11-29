@@ -402,10 +402,10 @@ li {
 }
 
 .portfolio-description h6 {
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     text-transform: uppercase;
     font-weight: 300;
-    opacity: 0.3;
+    opacity: 0.35;
 }
 
 .portfolio-description p {
