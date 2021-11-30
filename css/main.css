@@ -1,7 +1,9 @@
 /* CUSTOM PROPERTIES */
 :root {
-    --gradient-theme-start: #63bcccbb;
-    --gradient-theme-end: #7483b3be;
+    --gradient-theme-start: #638dccbb;
+    --gradient-theme-end: #7475b3be;
+
+    --text-theme-link: #5378c3; /*#4267b2*/ /*#7878FF*/;
   }
 /* END CUSTOM PROPERTIES */
 
@@ -227,7 +229,7 @@ li {
 }
 /* END HEADER */
 
-.title-line {
+.separator-line {
     margin: auto;
     width: 80%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -298,7 +300,7 @@ li {
 }
 
 .fa-github:hover {
-    color: #4267b2;
+    color: var(--text-theme-link);
 }
 
 .about-list .list-heading {
@@ -424,15 +426,16 @@ li {
 
 .portfolio-description .cta a {
     text-decoration: none;
-    color: #7878FF;
+    color: var(--text-theme-link);
 }
 
 .portfolio-description .cta a :hover {
     text-decoration: underline;
-    text-decoration: underline;
-	text-decoration-color: #7878FF;
-	-webkit-text-decoration-color: #7878FF;
-    color: #7878FF;
+	text-decoration-color: var(--text-theme-link);
+    -webkit-text-decoration-color: var(--text-theme-link);
+    text-decoration-thickness: 0.12em;
+    -webkit-text-decoration-thickness: 0.12em;
+    color: var(--text-theme-link);
 }
 
 /*
@@ -559,7 +562,7 @@ li {
 }
 
 .mail-icon:hover i {
-    color: #4267b2;
+    color: var(--text-theme-link);
 }
 
 .form {
@@ -726,7 +729,7 @@ input[type="submit"]:hover {
         /*font-size: 1.4rem;*/
     }
 
-    .title-line {
+    .separator-line {
         margin-bottom: 3rem;
         padding-bottom: 3rem;
     }
