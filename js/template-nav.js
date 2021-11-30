@@ -5,19 +5,19 @@ templateHeader.innerHTML = `
         <ul class="nav-list">
             
             <li>
-                <a href="index.html#portfolio" class="nav-link">Projects</a>
+                <a href="/##portfolio" class="nav-link">Projects</a>
             </li>
             <li>
-                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="/#experience" class="nav-link">Experience</a>
             </li>
             <li id="nav-about">
-                <a href="index.html#about" class="nav-link">About</a>
+                <a href="/#about" class="nav-link">About</a>
             </li>
             <li id="nav-services">
-                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="/##services" class="nav-link">Services</a>
             </li>
             <li>
-                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="/#contact" class="nav-link">Contact</a>
             </li>
         </ul>
     </nav>  
