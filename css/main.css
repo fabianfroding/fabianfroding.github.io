@@ -46,6 +46,20 @@ p {
 img {
     width: 100%;
 }
+
+.global-link a {
+    text-decoration: none;
+    color: var(--text-theme-link);
+}
+
+.global-link :hover {
+    text-decoration: underline;
+	text-decoration-color: var(--text-theme-link);
+    -webkit-text-decoration-color: var(--text-theme-link);
+    text-decoration-thickness: 0.12em;
+    -webkit-text-decoration-thickness: 0.12em;
+    color: var(--text-theme-link);
+}
 /* END GLOBAL */
 
 /* REUSABLE */
