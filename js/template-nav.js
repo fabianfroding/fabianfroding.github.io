@@ -24,3 +24,11 @@ templateNav.innerHTML = `
 `;
 
 document.body.prepend(templateNav.content);
+
+function printFile(file) {
+    const reader = new FileReader();
+    reader.onload = function(evt) {
+        console.log(evt.target.result);
+    };
+    reader.readAsText(file);
+}
