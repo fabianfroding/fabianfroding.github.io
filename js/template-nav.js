@@ -10,6 +10,9 @@ templateNav.innerHTML = `
             <li>
                 <a href="/#experience" class="nav-link">Experience</a>
             </li>
+            <!--li id="nav-services">
+                <a href="/#resume" class="nav-link">Resume</a>
+            </li-->
             <li id="nav-about">
                 <a href="/#about" class="nav-link">About</a>
             </li>
