@@ -6,6 +6,6 @@ Array.from(document.querySelectorAll(".project-img-thumbnail")).forEach(item => 
       modalImage.src = event.target.src;
    });
 });
-document.querySelector(".close").addEventListener("click", () => {
+document.querySelector(".modal-close").addEventListener("click", () => {
    modalEle.style.display = "none";
 });
