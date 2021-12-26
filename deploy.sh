@@ -1,14 +1,18 @@
 #!/usr/bin/env sh
 
+# abort on errors
 set -e
 
+# build
 npm run build
 
+# navigate into the build output directory
 cd dist
 
 git init
 git add -A
-git commit -m 'New Deployment'
-git push -f git@github.com:fabianfroding/fabianfroding.github.io.git master:gh-pages
+git commit -m 'deploy'
+
+git push -f git@github.com:fabianfroding/fabianfroding.github.io.git master
 
 cd -
