@@ -1,9 +1,9 @@
 /* CUSTOM PROPERTIES */
 :root {
-    --gradient-theme-start: #638dccdd;
-    --gradient-theme-end: #577efdbe;
+    --gradient-theme-start: #25354ddd;
+    --gradient-theme-end: #324992be;
 
-    --text-theme-link: #5378FF; /*#4267b2*/ /*#7878FF*/;
+    --text-theme-link: #2d4087; /*#4267b2*/ /*#7878FF*/;
   }
 /* END CUSTOM PROPERTIES */
 
@@ -18,14 +18,14 @@
 html {
     font-size: 10px;
     font-family: 'Source Code Pro', monospace;
-    color: #eee;
+    color: #222;
 }
 
 body {
     width: 100%;
     height: 100%;
-    background-color: #111 !important; /* Prevents white flash on page change. */
-    background: url("sitebg.jpg") no-repeat center fixed;
+    background-color: #ddd !important; /* Prevents white flash on page change. */
+    /*background: url("sitebg.jpg") no-repeat center fixed;*/
     background-size: cover;
 }
 
@@ -35,7 +35,7 @@ section {
 
 a {
     text-decoration: none;
-    color: #eee;
+    color: #222;
 }
 
 p {
@@ -78,7 +78,7 @@ img {
 /* REUSABLE */
 .container {
     width: 90%;
-    max-width: 120rem;
+    /*max-width: 120rem;*/
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -91,7 +91,7 @@ img {
 
 .section-heading h1 {
     font-size: 3.5rem;
-    color: rgba(255, 255, 255, .3);
+    color: rgba(0, 0, 0, .3);
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
@@ -105,7 +105,7 @@ img {
     bottom: -.5rem;
     left: 50%;
     transform: translate(-50%);
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(0, 0, 0, .75);
 }
 
 /*.section-heading h1::before {
@@ -142,7 +142,7 @@ header {
     height: 6.5vh;
     position: fixed;
     z-index: 50;
-    background-color: rgba(5, 10, 20, 0.975);
+    background-color: rgba(250, 245, 235, 0.975);
     display: flex;
     justify-content: center; /* center nav-content horizontally */
     align-items: center;
@@ -278,7 +278,7 @@ li {
 .separator-line {
     margin: auto;
     width: 80%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.85);
     margin-bottom: 1rem;
     padding-bottom: 1rem;
 }
@@ -309,14 +309,14 @@ li {
 }
 
 .about-details p {
-    color: #a1d3eb;
+    color: #171e21;
     font-size: 13.5px;
     line-height: 2.8rem;
     text-align: center;
 }
 
 .about-details p strong {
-    color: #71a1eb;
+    color: #0e151e;
 }
 
 .profile-img {
@@ -359,19 +359,19 @@ li {
 }
 
 .about-list .list-heading {
-    color: #a1d3eb;
+    color: #1a2225;
     line-height: 3.5rem;
 }
 
 .about-list .list-info {
-    color: #d0e0e7;
+    color: #232627;
     line-height: 2.5rem;
     font-size: 135%;
     font-weight: 105%;
 }
 
 .about-list ul {
-    color: #d0e0e7;
+    color: #202324;
     line-height: 2.25rem;
     font-size: 120%;
     padding-left: 10px;
@@ -413,7 +413,7 @@ li {
 .skill p {
     font-size: 1.25rem;
     line-height: 2rem;
-    color: #93C3ff;
+    color: #000000;
 }
 
 .icon-container {
@@ -433,7 +433,7 @@ li {
 }
 
 .icon-container i {
-    color: #38e8ff;
+    color: #1f7a86;
     font-size: 3.5rem;
     margin: auto;
     transform: rotate(-45deg);
@@ -441,8 +441,15 @@ li {
 /* END SERVICES */
 
 /* PORTFOLIO */
+#portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 2rem;
+}
+
 .portfolio-item {
-    display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2.5rem;
@@ -459,10 +466,21 @@ li {
 
 .portfolio-img img {
     transition: transform 0.3s ease;
+    height: 300px; /* or whatever consistent height you want */
+    object-fit: cover; /* preserves aspect ratio and avoids stretching */
+    width: 100%;
 }
 
 .portfolio-img img:hover {
     transform: scale(1.065);
+}
+
+.portfolio-img h1 {
+    padding-top: 0.4rem;
+    font-size: 2.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 1rem 0;
 }
 
 .portfolio-description {
@@ -481,26 +499,26 @@ li {
     font-weight: 300;
     margin-left: auto;
     text-align: right;
-    color: #b5d1ff;
+    color: #5b6980;
 }
 
 .portfolio-description h6 {
     font-size: 1.45rem;
     font-weight: 300;
-    color: #b5d1ff;
+    color: #5b6980;
 }
 
 .portfolio-description p {
     font-size: 1.25rem;
     line-height: 1.8rem;
-    color: #b5d1ff;
+    color: #556277;
 }
 
 .portfolio-description .cta {
     display: inline-block;
     margin-top: 2.5rem;
     font-size: 1.33rem;
-    color: #b5d1ff;
+    color: #5a687e;
     transition: color 650ms;
 }
 
@@ -535,6 +553,72 @@ li {
     color: #2f67cd;
 }
 */
+
+.project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.project-img {
+    flex: 0.5;
+}
+
+.project-description {
+    flex: 1;
+}
+
+.project-description h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.project-description h5 {
+    font-size: 1.45rem;
+    font-weight: 300;
+    margin-left: auto;
+    text-align: right;
+    color: #536074;
+}
+
+.project-description h6 {
+    font-size: 1.45rem;
+    font-weight: 300;
+    color: #5d6c84;
+}
+
+.project-description p {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: #596880;
+}
+
+.project-description .cta {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.33rem;
+    color: #5b6a81;
+    transition: color 650ms;
+}
+
+.project-description .cta a {
+    text-decoration: none;
+    color: var(--text-theme-link);
+    font-size: 1.55rem;
+}
+
+.project-description .cta a :hover {
+    text-decoration: underline;
+	text-decoration-color: var(--text-theme-link);
+    -webkit-text-decoration-color: var(--text-theme-link);
+    text-decoration-thickness: 0.12em;
+    -webkit-text-decoration-thickness: 0.12em;
+    color: var(--text-theme-link);
+}
 
 .project-link {
     font-size: 3rem;
@@ -767,7 +851,7 @@ input[type="submit"]:hover {
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
     body {
-        background: url("sitebg.jpg") no-repeat center fixed;
+        /*background: url("sitebg.jpg") no-repeat center fixed;*/
         background-size: cover;
     }
 
@@ -851,6 +935,10 @@ input[type="submit"]:hover {
     #nav-research {
         display: block;
     }
+
+    #portfolio {
+        grid-template-columns: 2fr;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -920,6 +1008,10 @@ input[type="submit"]:hover {
 
     #nav-research {
         display: none;
+    }
+
+    #portfolio {
+        grid-template-columns: 1fr;
     }
 }
 /* END MEDIA QUERIES */

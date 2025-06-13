@@ -1,20 +1,344 @@
-<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fabian Fröding - Software Engineer & Game Developer</title><link rel="icon" href="logo.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro&display=swap"><script src="https://kit.fontawesome.com/04de3041c3.js" crossorigin="anonymous"></script><link rel="stylesheet" href="/resources/main.css"><link rel="stylesheet" href="/resources/project-details.css"><script>// Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script checks to see if a redirect is present in the query string,
-      // converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...),
-      // which won't cause the browser to attempt to load the new url.
-      // When the single page app is loaded further down in this file,
-      // the correct url will be waiting in the browser's history for
-      // the single page app to route accordingly.
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))</script><link href="css/chunk-0dcd5376.0046498d.css" rel="prefetch"><link href="css/chunk-29b98530.7cf525f9.css" rel="prefetch"><link href="js/chunk-0dcd5376.7e092f1a.js" rel="prefetch"><link href="js/chunk-29b98530.2538a179.js" rel="prefetch"><link href="js/chunk-2d0a3955.76ae2ff8.js" rel="prefetch"><link href="js/chunk-2d0aa5e5.fb156164.js" rel="prefetch"><link href="js/chunk-2d0b1e4f.fdfb60d8.js" rel="prefetch"><link href="js/chunk-2d0b6cf6.e506de3f.js" rel="prefetch"><link href="js/chunk-2d0c54c9.c4d04ee7.js" rel="prefetch"><link href="js/chunk-2d0d7ab5.2b65a663.js" rel="prefetch"><link href="js/chunk-2d0e1821.8dc4edb2.js" rel="prefetch"><link href="js/chunk-2d0e6888.9a357abe.js" rel="prefetch"><link href="js/chunk-2d2101f0.4cb83fe2.js" rel="prefetch"><link href="js/chunk-2d210c47.d79d8150.js" rel="prefetch"><link href="js/chunk-2d222cbc.ea28cda8.js" rel="prefetch"><link href="js/chunk-7994f087.8bdbad79.js" rel="prefetch"><link href="js/app.c7cadaba.js" rel="preload" as="script"><link href="js/chunk-vendors.77af6561.js" rel="preload" as="script"></head><body><noscript><strong>We're sorry but portfolio doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="js/chunk-vendors.77af6561.js"></script><script src="js/app.c7cadaba.js"></script></body></html>
+<style>
+  :root {
+    --bright-blue: oklch(51.01% 0.274 263.83);
+    --electric-violet: oklch(53.18% 0.28 296.97);
+    --french-violet: oklch(47.66% 0.246 305.88);
+    --vivid-pink: oklch(69.02% 0.277 332.77);
+    --hot-red: oklch(61.42% 0.238 15.34);
+    --orange-red: oklch(63.32% 0.24 31.68);
+
+    --gray-900: oklch(19.37% 0.006 300.98);
+    --gray-700: oklch(36.98% 0.014 302.71);
+    --gray-400: oklch(70.9% 0.015 304.04);
+
+    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+      180deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+      90deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --purple-to-pink-to-orange-vertical-gradient: linear-gradient(
+      180deg,
+      var(--electric-violet) 0%,
+      var(--vivid-pink) 50%,
+      var(--orange-red) 100%
+    );
+
+    --purple-to-pink-to-orange-horizontal-gradient: linear-gradient(
+      90deg,
+      var(--electric-violet) 0%,
+      var(--vivid-pink) 50%,
+      var(--orange-red) 100%
+    );
+
+    --pill-accent: var(--bright-blue);
+
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  body {
+    background-color: #eee;
+  }
+
+  h1 {
+    font-size: 3.125rem;
+    color: var(--gray-900);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  p {
+    margin: 0;
+    color: var(--gray-700);
+    font-size: 1.05rem;
+  }
+
+  main {
+    width: 95%;
+    min-height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: 1rem;*/
+    box-sizing: inherit;
+    position: relative;
+  }
+
+  .angular-logo {
+    max-width: 9.2rem;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 3rem;
+  }
+
+  .content h1 {
+    margin-top: 1.75rem;
+  }
+
+  .content p {
+    margin-top: 1.5rem;
+  }
+
+  .divider {
+    width: 1px;
+    background: var(--purple-to-pink-to-orange-vertical-gradient);
+    margin-inline: 0.5rem;
+  }
+
+  .pill-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .pill {
+    display: flex;
+    align-items: center;
+    --pill-accent: var(--bright-blue);
+    background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
+    color: var(--pill-accent);
+    padding-inline: 0.75rem;
+    padding-block: 0.375rem;
+    border-radius: 2.75rem;
+    border: 0;
+    transition: background 0.3s ease;
+    font-family: var(--inter-font);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4rem;
+    letter-spacing: -0.00875rem;
+    text-decoration: none;
+  }
+
+  .pill:hover {
+    background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
+  }
+
+  .pill-group .pill:nth-child(6n + 1) {
+    --pill-accent: var(--bright-blue);
+  }
+  .pill-group .pill:nth-child(6n + 2) {
+    --pill-accent: var(--hot-red);
+  }
+  .pill-group .pill:nth-child(6n + 3),
+  .pill-group .pill:nth-child(6n + 4),
+  .pill-group .pill:nth-child(6n + 5) {
+    --pill-accent: var(--french-violet);
+  }
+
+  .pill-group svg {
+    margin-inline-start: 0.25rem;
+  }
+
+  .pill-group i {
+    margin-inline-start: 0.25rem;
+    font-size: 25px;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.73rem;
+    margin-top: 1.5rem;
+  }
+
+  .social-links path {
+    transition: fill 0.3s ease;
+    fill: var(--gray-400);
+  }
+
+  .social-links a:hover svg path {
+    fill: var(--gray-900);
+  }
+
+  .social-links a i {
+  transition: color 0.3s ease;
+  color: var(--gray-400); /* Initial color */
+  font-size: 25px;
+}
+
+.social-links a:hover i {
+  color: var(--gray-900); /* On hover */
+}
+
+.profile-img img {
+  width: 133px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.intro-text {
+  /*letter-spacing: -0.125rem;*/
+  line-height: 1.5;
+}
+
+.copyright {
+    width: 100%;
+    text-align: right;
+    /*padding: 2rem 0;*/
+    position: relative;
+}
+
+.copyright p {
+    font-size: 0.9rem;
+}
+
+/* Fade effects */
+
+/* Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes moveUp {
+  from { transform: translateY(30px); }
+  to { transform: translateY(0); }
+}
+
+/* Initial states */
+.fade-in {
+  opacity: 0;
+}
+
+.move-up {
+  transform: translateY(30px);
+}
+
+/* Animate fade only */
+.animate-fade {
+  animation: fadeIn 0.6s ease-out forwards;
+  animation-play-state: paused;
+}
+
+/* Animate move only */
+.animate-up {
+  animation: moveUp 0.6s ease-out forwards;
+  animation-play-state: paused;
+}
+
+/* Animate both */
+.animate-fade-up {
+  animation: fadeIn 0.6s ease-out forwards, moveUp 0.6s ease-out forwards;
+  animation-play-state: paused;
+}
+
+/* Trigger */
+.visible {
+  animation-play-state: running;
+}
+
+/* End fade effects */
+
+@media screen and (max-width: 650px) {
+  .content {
+    flex-direction: column;
+    width: max-content;
+  }
+
+  .divider {
+    height: 1px;
+    width: 100%;
+    background: var(--purple-to-pink-to-orange-horizontal-gradient);
+    margin-block: 1.5rem;
+  }
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <title>Fabian Fröding - Software Engineer</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro&display=swap">
+  </head>
+
+  <body>
+  <main class="main">
+  <div class="content">
+    <div class="left-side">
+      <div class="profile-img fade-in move-up animate-fade-up visible">
+					<img src="../resources/profile-pic.jpg">
+      </div>
+      <h2 class="fade-in move-up animate-fade-up visible">Hello!</h2>
+      <h1 class="fade-in move-up animate-fade-up visible">I'm Fabian,</h1>
+      <p class="intro-text move-up animate-fade visible">A versatile Software Engineer driven by a passion for building modular systems and crafting seamless, 
+        enjoyable experiences—across platforms and mediums, from code to interface.</p>
+    </div>
+    <div class="divider" role="separator" aria-label="Divider"></div>
+    <div class="right-side">
+      <div class="pill-group move-up animate-fade-up visible">
+        <a class="pill" href="./portfolio/" rel="noopener">
+          <span>Portfolio</span>
+          <i class="fab fa-vuejs"></i>
+        </a>
+        <a class="pill" href="./about/" rel="noopener">
+          <span>About (WIP)</span>
+          <i class="fab fa-angular"></i>
+        </a>
+      </div>
+      <div class="social-links move-up animate-fade visible">
+        <a href="https://www.linkedin.com/in/fabianfroding/" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:fabian.froding@gmail.com" aria-label="Youtube" target="_blank" rel="noopener">
+          <i class="fa fa-envelope"></i>
+        </a>
+        <a href="https://github.com/fabianfroding" aria-label="Github" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+<router-outlet/>
+<footer class="copyright">
+  <p>
+    Copyright &copy; <span id="year"></span> Fabian Fröding. All rights reserved.
+  </p>
+</footer>
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const animatedElements = document.querySelectorAll('[class*="animate-"]');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  animatedElements.forEach(el => observer.observe(el));
+});
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</html>
