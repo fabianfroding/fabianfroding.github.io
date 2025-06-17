@@ -1,19 +1,19 @@
 /* PROJECT DETAILS PAGE */
 
-.project-description .tool-used {
+.portfolio-description .tool-used {
     display: inline-block;
     margin-top: 2.5rem;
     font-size: 1.33rem;
-    color: #5e6d85;
+    color: #b5d1ff;
     transition: color 650ms;
 }
 
-.project-description .tool-used a {
+.portfolio-description .tool-used a {
     text-decoration: none;
     color: var(--text-theme-link);
 }
 
-.project-description .tool-used a :hover {
+.portfolio-description .tool-used a :hover {
     text-decoration: underline;
 	text-decoration-color: var(--text-theme-link);
     -webkit-text-decoration-color: var(--text-theme-link);
@@ -27,7 +27,7 @@
 }
 
 /* Aligns the first image to the top next to the description text. */
-.project-item {
+.portfolio-item {
     align-items: flex-start;
 }
 
