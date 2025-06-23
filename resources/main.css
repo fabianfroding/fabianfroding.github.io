@@ -191,7 +191,7 @@ li {
 }
 
 .nav-link:hover /*, .nav-link:focus*/ {
-    background: linear-gradient(to top, var(--gradient-theme-start), var(--gradient-theme-end));
+    background: var(--text-theme-link);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -595,6 +595,21 @@ li {
     background-color: #577efd88 !important;
 }
 
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.filter-buttons .nav-link {
+    text-decoration: underline;
+    font-size: 1.75rem;
+}
+
+.filter-buttons:hover {
+    text-decoration: underline;
+}
+
 /* END PORTFOLIO */
 
 /* EXPERIENCE / TIMELINE */
@@ -897,10 +912,6 @@ input[type="submit"]:hover {
     .separator-line {
         margin-bottom: 3rem;
         padding-bottom: 3rem;
-    }
-
-    .nav-link {
-        /*font-size: 3.5rem;*/
     }
 
     .about .container {
