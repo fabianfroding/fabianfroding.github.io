@@ -374,9 +374,19 @@ li {
 .footer-icon {
     margin-left: 2px;
     margin-right: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .footer-icon:hover {
+    color: var(--text-theme-link);
+}
+
+.copyright .footer-icon {
+    color: rgba(5, 10, 20, 0.975);
+}
+
+.copyright .footer-icon:hover {
     color: var(--text-theme-link);
 }
 
