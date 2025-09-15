@@ -181,13 +181,14 @@ header {
 }
 
 li {
-    margin: 0 2rem;
+    margin: 0 0.4rem;
 }
 
 .nav-link {
     font-family: 'Source Code Pro', monospace;
     font-size: 2rem;
-    padding: 1rem;
+    padding: 0.4rem;
+    text-decoration: underline;
 }
 
 .nav-link:hover /*, .nav-link:focus*/ {
@@ -836,6 +837,15 @@ input[type="submit"]:hover {
 }
 /* END ANIMATIONS */
 
+.nav-section {
+    display: flex;
+    padding: 2rem;
+}
+
+.nav-section .nav-title {
+    font-size: 2.5rem;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
     body {
@@ -857,8 +867,21 @@ input[type="submit"]:hover {
     }
 
     .nav-list {
-        /*flex-direction: column;*/
+        flex-direction: column;
         gap: 1rem;
+        align-items: center;
+    }
+
+    .nav-section .project-link {
+        display: none;
+    }
+
+    .filter-buttons {
+        display: none;
+    }
+
+    .nav-section li {
+        margin: 0 0.4rem;
     }
 
     .nav-content {
