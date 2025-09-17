@@ -3,6 +3,7 @@
     --gradient-theme-start: #2b3c57dd;
     --gradient-theme-end: #324891be;
 
+    --text-theme-generic: #DADADA;
     --text-theme-link: #2e438d; /*#4267b2*/ /*#7878FF*/;
   }
 /* END CUSTOM PROPERTIES */
@@ -12,12 +13,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    user-select: none;
+    /*user-select: none;*/
 }
 
 html {
     font-size: 10px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Open Sans', monospace;
     color: #eee;
 }
 
@@ -50,6 +51,7 @@ img {
 .global-link a {
     text-decoration: none;
     color: var(--text-theme-link);
+    user-select: none;
 }
 
 .global-link :hover {
@@ -140,6 +142,8 @@ header {
 .top-nav {
     width: 100%;
     height: 6.5vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
     position: fixed;
     z-index: 50;
     background-color: rgba(5, 10, 20, 0.975);
@@ -160,7 +164,7 @@ header {
 
 .nav-content h1 {
     font-size: 13rem;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Open Sans', monospace;
     background: linear-gradient(to top, var(--gradient-theme-start), var(--gradient-theme-end));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -185,10 +189,11 @@ li {
 }
 
 .nav-link {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Open Sans', monospace;
     font-size: 2rem;
     padding: 0.4rem;
-    text-decoration: underline;
+    font-weight: 100;
+    user-select: none;
 }
 
 .nav-link:hover /*, .nav-link:focus*/ {
@@ -262,12 +267,12 @@ li {
 
 .landing-text h1 {
     font-size: 3.2rem;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Open Sans', monospace;
     background: linear-gradient(to top, var(--gradient-theme-start), var(--gradient-theme-end));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
-    user-select: none;
+    /*user-select: none;*/
 }
 
 .landing-text h6 {
@@ -521,6 +526,7 @@ li {
     font-weight: 300;
     text-transform: uppercase;
     margin: 1rem 0;
+    color: #4480DA;
 }
 
 .portfolio-description h5 {
@@ -528,43 +534,42 @@ li {
     font-weight: 300;
     margin-left: auto;
     text-align: right;
-    color: #5f6e86;
+    color: var(--text-theme-generic);
 }
 
 .portfolio-description h6 {
     font-size: 1.45rem;
     font-weight: 300;
-    color: #5777eb;
+    color: var(--text-theme-generic);
 }
 
 .portfolio-description p {
     font-size: 1.25rem;
     line-height: 1.8rem;
-    color: #b5bfdd;
+    color: var(--text-theme-generic);
 }
 
 .portfolio-description .cta {
     display: inline-block;
     margin-top: 2.5rem;
     font-size: 1.33rem;
-    color: #5777eb;
+    color: var(--text-theme-generic);
     transition: color 650ms;
 }
 
 .portfolio-description .cta a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #8ea6ec;
     font-size: 1.55rem;
 }
 .portfolio-description .cta .viewdetails {
-    display: inline-block;
+    display: flex;
     margin-top: 2.5rem;
-    font-size: 1.33rem;
+    font-size: 1.5rem;
     color: #7892ef;
 }
 
 .portfolio-description .cta a :hover {
-    text-decoration: underline;
 	text-decoration-color: var(--text-theme-link);
     -webkit-text-decoration-color: var(--text-theme-link);
     text-decoration-thickness: 0.12em;
@@ -633,12 +638,7 @@ li {
 }
 
 .filter-buttons .nav-link {
-    text-decoration: underline;
     font-size: 1.75rem;
-}
-
-.filter-buttons:hover {
-    text-decoration: underline;
 }
 
 /* END PORTFOLIO */
@@ -843,7 +843,8 @@ input[type="submit"]:hover {
 }
 
 .nav-section .nav-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    font-weight: 550;
 }
 
 /* MEDIA QUERIES */
