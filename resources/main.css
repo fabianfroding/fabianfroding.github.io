@@ -88,13 +88,13 @@ img {
 }
 
 .section-heading {
-    text-align: center;
-    margin-bottom: 3.5rem /* 6.5rem; */
+    text-align: left;
+    margin-bottom: 3.5rem; /* 6.5rem; */
 }
 
 .section-heading h1 {
     font-size: 3.5rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: #4480DA;
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
@@ -646,6 +646,17 @@ li {
 .job-title {
     padding-top: 0.05rem;
     padding-bottom: 0.05rem;
+}
+
+.project-details .job-title {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.project-details .section-heading h1 {
+    text-transform: none;
+    font-weight: 500;
+    font-size: 35px;
 }
 
 /* END PORTFOLIO */
