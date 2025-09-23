@@ -88,7 +88,7 @@ img {
 }
 
 .section-heading {
-    text-align: left;
+    text-align: center;
     margin-bottom: 3.5rem; /* 6.5rem; */
 }
 
@@ -334,7 +334,7 @@ li {
 }
 
 .profile-img img {
-    width: 133px;
+    width: 266px;
     height: auto;
     display: block;
     margin: auto;
